@@ -34,6 +34,66 @@ nav a{
     line-height: 20px;
     letter-spacing: 6px;
 }
+.categorie{
+    font-family: "Rubik", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    background-color: #f6f6f6;
+    position: absolute;
+    right: 20vw;
+    min-width: 50vw;
+    min-height: 35vw;
+    top: calc(100% + 10px);
+    /* height: 143px; */
+    /* height: 143px; */
+    z-index: 1;
+}
+.container {  
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    gap: 0px 0px;
+    background-color: red;
+    grid-auto-flow: row;
+    align-items: center;
+    grid-template-areas:
+      "a b c d"
+      "e f g h"
+      "i k l m"
+      "n n o o";
+  }
+  
+  .a { grid-area: a; }
+  
+  .b { grid-area: b; }
+  
+  .c { grid-area: c; }
+  
+  .d { grid-area: d; }
+  
+  .e { grid-area: e; }
+  
+  .f { grid-area: f; }
+  
+  .g { grid-area: g; }
+  
+  .h { grid-area: h; }
+  
+  .i { grid-area: i; }
+  
+  .k { grid-area: k; }
+  
+  .l { grid-area: l; }
+  
+  .m { grid-area: m; }
+  
+  .n { grid-area: n; }
+  
+  .o { grid-area: o; }
+  
 a{
     display: flex;
     align-items: center;
