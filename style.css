@@ -1,3 +1,4 @@
+
 *{
     padding: 0px;
     margin: 0px;
@@ -25,7 +26,7 @@ nav{
 
 nav a{
     padding: 5px 15px;
-    margin-top: 10px;
+    
     text-decoration: none;
     color: black;
     font-family: "Raleway", sans-serif;
@@ -34,39 +35,78 @@ nav a{
     line-height: 20px;
     letter-spacing: 6px;
 }
-.categorie{
+
+
+.dropdown-content {  
     font-family: "Rubik", sans-serif;
     font-optical-sizing: auto;
     font-style: normal;
     list-style: none;
-    margin: 0;
-    padding: 0;
-    background-color: #f6f6f6;
     position: absolute;
     right: 20vw;
     min-width: 50vw;
-    min-height: 35vw;
-    top: calc(100% + 10px);
-    /* height: 143px; */
-    /* height: 143px; */
-    z-index: 1;
-}
-.container {  
+    z-index: -1;
+    top:7vw;
+    transition: all .5s ease-in-out;
+    /*------------------------------*/
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows:calc(35vw / 4) calc(35vw / 4) calc(35vw / 4) ;
     gap: 0px 0px;
-    background-color: red;
+    background-color: #848484b6;
     grid-auto-flow: row;
     align-items: center;
+    opacity: 0;
+    transform: translateY(-3%);
+
     grid-template-areas:
-      "a b c d"
-      "e f g h"
-      "i k l m"
-      "n n o o";
+
+      "a b"
+      "c d "
+      "e f" ;
+      
   }
+
+  .dropdown:hover + .dropdown-content {
+   opacity: 1;
+   transform: translateY(0%);
+   
+    
+  }
+ .dropdown-content::before{
+    content: "";
+    border-top-width: 9px;
+    border-right-width: 49px;
+    border-bottom-width: 52px;
+    border-left-width: 103px;
+    border-style: solid;
+    border-color: transparent;
+    position: absolute;
+    right: 37vw;
+    top: 62px;
+  }
+  .dropdown-content div{
+    height: 100%;
+    border: 1px solid saddlebrown;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Raleway", sans-serif;
+    font-size: 60px;
+    font-weight: 900;
+    line-height: 20px;
   
-  .a { grid-area: a; }
+
+    
+    
+    
+  }
+  .a { 
+    grid-area: a;
+   
+    
+    
+}
   
   .b { grid-area: b; }
   
@@ -78,21 +118,7 @@ nav a{
   
   .f { grid-area: f; }
   
-  .g { grid-area: g; }
   
-  .h { grid-area: h; }
-  
-  .i { grid-area: i; }
-  
-  .k { grid-area: k; }
-  
-  .l { grid-area: l; }
-  
-  .m { grid-area: m; }
-  
-  .n { grid-area: n; }
-  
-  .o { grid-area: o; }
   
 a{
     display: flex;
@@ -107,9 +133,8 @@ a{
     border: 2px black solid;
     border-radius: 50%;
 }
-nav a:hover{
-    border-bottom: 2px solid black;
-}
+
+    
 /*end of header*/
 /*start of main*/
 video{
