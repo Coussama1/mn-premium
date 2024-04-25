@@ -8,26 +8,23 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-
 </head>
 <body>
     <header>
         <a href="#" onclick="refreshPage()"><img src="icon/MN PREMIUM 1.png" alt="logo" id="logo"></a>
-        <nav>
-            <a href="#accueil">Accueil</a>
-            <a href="#actualit">Actualités</a>
-            <a href="#categorie" class="dropdown">Catégories</a>           
-            <div class="dropdown-content">
-                <div class="a">Sauces</div>
-                <div class="b">Bakery</div>
-                <div class="c">Dairy</div>
-                <div class="d">Meat</div>
-                <div class="e">Seafood</div>
-                <div class="f">Packaging</div>
-                
-            </div>
-          </div>
-            <a href="#contact">Contact</a>
+        <nav class="dropmenu" >
+                <li><a href="#accueil">Accueil</a></li>
+                <li><a href="#actualit">Actualités</a></li>
+                <li><a href="#categories">Catégories</a></li>
+                <ul class="dropdown-content">
+                        <li><a href="categories">Sauces</a></li>
+                        <li><a href="categories">Bakery</a></li>
+                        <li><a href="categories">Dairy</a></li>
+                        <li><a href="categories">Meat</a></li>
+                        <li><a href="categories">Seafood</a></li>
+                        <li><a href="categories">Packagin</a></li>
+                </ul>
+                <li><a href="#actualit">Contact</a></li>
         </nav>
         <a href="#buy"><img src="icon/cart.png" alt="achat" id="achat"></a>
     </header>

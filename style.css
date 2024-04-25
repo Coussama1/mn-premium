@@ -17,7 +17,7 @@ header{
     height: 7vw;
     width: 7vw;
 }
-nav{
+nav li{
     display: flex;
     /* margin-top: 70px; */
     align-items: center;
@@ -26,7 +26,6 @@ nav{
 
 nav a{
     padding: 5px 15px;
-    
     text-decoration: none;
     color: black;
     font-family: "Raleway", sans-serif;
@@ -37,70 +36,46 @@ nav a{
 }
 
 
-.dropdown-content {  
+.dropdown-content { 
     font-family: "Rubik", sans-serif;
-    font-optical-sizing: auto;
-    font-style: normal;
-    list-style: none;
     position: absolute;
-    right: 20vw;
-    min-width: 50vw;
-    z-index: -1;
-    top:7vw;
+    right: 32vw;
+    min-width: 28vw;
+    top: 7vw;
     transition: all .5s ease-in-out;
-    /*------------------------------*/
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows:calc(35vw / 4) calc(35vw / 4) calc(35vw / 4) ;
+    grid-template-columns: 14vw 14vw;
+    grid-template-rows: calc(20vw / 3) calc(20vw / 3) calc(20vw / 3);
     gap: 0px 0px;
     background-color: #848484b6;
-    grid-auto-flow: row;
     align-items: center;
-    opacity: 0;
-    transform: translateY(-3%);
-
+    z-index: 1;
     grid-template-areas:
-
-      "a b"
-      "c d "
-      "e f" ;
-      
-  }
-
-  .dropdown:hover + .dropdown-content {
-   opacity: 1;
-   transform: translateY(0%);
-   
-    
-  }
- .dropdown-content::before{
-    content: "";
-    border-top-width: 9px;
-    border-right-width: 49px;
-    border-bottom-width: 52px;
-    border-left-width: 103px;
-    border-style: solid;
-    border-color: transparent;
-    position: absolute;
-    right: 37vw;
-    top: 62px;
-  }
-  .dropdown-content div{
-    height: 100%;
-    border: 1px solid saddlebrown;
+        "a b"
+        "c d "
+        "e f";
+}
+  nav , ul {
     display: flex;
-    justify-content: center;
     align-items: center;
-    font-family: "Raleway", sans-serif;
-    font-size: 60px;
-    font-weight: 900;
-    line-height: 20px;
-  
-
-    
-    
-    
   }
+  .dropdown-content{
+    opacity: 0;
+    visibility:hidden;
+    z-index: 1;
+  }
+  nav:hover .dropdown-content {
+    opacity: 1;
+    visibility: visible;
+  }
+  li a{
+    transition: all .4s ease;
+  }
+
+  .dropdown-content li a:hover{
+    padding-left: 40%;
+  }
+
   .a { 
     grid-area: a;
    
@@ -129,10 +104,7 @@ a{
     width: 30px;
     
 }
-#achat:hover{
-    border: 2px black solid;
-    border-radius: 50%;
-}
+
 
     
 /*end of header*/
