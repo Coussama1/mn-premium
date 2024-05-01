@@ -42,8 +42,8 @@ header{
 
 
 #logo{
-    height: 7vw;
-    width: 7vw;
+    height: 10vw;
+    width: 10vw;
 }
 nav li{
     display: flex;
@@ -258,6 +258,9 @@ video{
 /*order part*/
 .Order {
     max-width: 600px;
+    background-image: linear-gradient(to bottom right, #e56464, #efa060e1),url(images/stock.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
     margin: 40px auto;
     padding: 20px;
     background-color: #f9f9f9;
@@ -333,6 +336,7 @@ footer {
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
+    padding-left: 40px;
   }
   
   .footer-section {
