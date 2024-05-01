@@ -228,6 +228,9 @@ video{
 /*order part*/
 .Order {
     max-width: 600px;
+    background-image: linear-gradient(to bottom right, #e56464, #efa060e1),url(images/stock.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
     margin: 40px auto;
     padding: 20px;
     background-color: #f9f9f9;
