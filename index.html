@@ -20,7 +20,7 @@
             <ul>
                 <li><a href="#accueil">Accueil</a></li>
                 <li><a href="#actualit">Actualités</a></li>
-                <li><a href="Catégories">Catégories</a>
+                <li><a href="Catégories">Catégories⤵</a>
                     <ul class="dropdown-content">
                         <li><a href="">Sauces</a></li>
                         <li><a href="">Bakery</a></li>
@@ -43,7 +43,7 @@
     <main>
         <video src="video/Brand Promo Video _ Food TV Commercial _ Brand Video _ Brand Video Teaser By Ministry of Marketing.mp4"  autoplay loop muted></video>
         
-        <div class="content2">
+        <div class="content2" id="accueil">
             <div class="First_title">Whay choos us?</div>
             <div class="Second_title">You will choose us because you get the best quality  products from us and we deliver fast.</div>
             <div id="allcart">
@@ -74,10 +74,30 @@
              </div>
         </div>
     </main>
-    <section class="Actualités" id="actualit">
-        
-           
+
+    <section class="Actualités" id="actualit">  
+        <article class="product">
+          <a href="#"><img src="images/fries.jpg" alt="French fries image"></a>
+          <p><h3>Description :</h3>French fries are served hot, either soft or crispy</p>
+          <p><h3>Price :</h3><span>250DH</span></p>
+        </article>
+        <article class="product">
+          <a href="#"><img src="images/sauce.jpg" alt="Sauce image"></a>
+          <p><h3>Description :</h3>La reine des apéritifs! Une sauce relevée au chili qui accompagnera tellement bien vos samosas</p>
+          <p><h3>Price :</h3><span>90 DH</span></p>
+        </article>
+        <article class="product">
+          <a href="#"><img src="images/papier.jpg" alt="Paper image"></a>
+          <p><h3>Description :</h3>Des emballages alimentaires écologiques rigides et souples pour sandwichs, tacos ou kebabs</p>
+          <p><h3>Price :</h3><span>150 DHDH</span></p>
+        </article>
+        <article class="product">
+          <a href="#"><img src="images/fromage.jpg" alt="Cheese image"></a>
+          <p><h3>Description :</h3>Mozzarella Bloc Mamie Zakia 1kg</p>
+          <p><h3>Price :</h3><span>100DH</span></p>
+        </article>
     </section>
+    
     <section class="Order">
         <div class="title_order" id="#contact">
             <h2>contact us and Make Your Order in Our Online Services </h2>
@@ -85,23 +105,26 @@
         </div>
         <form action="test.php" method="get" id="order">
             <div>
-                <input type="text" name="Name" id="Name" placeholder="Your Name">
+                <input type="text" name="Name" id="Name" placeholder="Your Name" required>
             </div>
             <div>
-                <input type="text" placeholder="Your Subject">
+                <input type="text" name="Name" id="Name" placeholder="Your Phone number" required>
             </div>
             <div>
-                <input type="email" placeholder="Your Email">
+                <input type="text" name="Name" id="Name" placeholder="Your local name" required>
             </div>
             <div>
-                <input type="checkbox" id="copyCheckbox">
+                <input type="email" placeholder="Your Email" required>
+            </div>
+            <div>
+                <input type="checkbox" id="copyCheckbox" >
                 <label for="copyCheckbox">Send A Copy</label>
             </div>
             <div>
                 <textarea name="discription" id="disc" cols="30" rows="10" placeholder="Suggest something"></textarea>
             </div>
             <div>
-                <input type="button" value="Give A Shot" id="shot">
+                <input type="submit" value="Give A Shot" id="shot">
             </div>
         </div>
         </form>           
@@ -117,7 +140,7 @@
             <ul>
               <li>Phone: (123) 456-7890</li>
               <li>Email: info@mn-premium.com</li>
-              <li>Address: 123 , Zone industriel Ait Kamra</li>
+              <li>Address: Zone D'activité Économique D'ait Kamra Al Hoceima (M)</li>
             </ul>
           </div>
           <div class="footer-section">
@@ -128,10 +151,14 @@
               <li><a href="#">Instagram</a></li>
             </ul>
           </div>
+          <div class="map">
+            <iframe src="mn-premium" frameborder="0"></iframe>
+          </div>
         </div>
+        
         <div class="copyright">
           <p>&copy; 2023 MN Premium. All rights reserved.</p>
         </div>
-      </footer>
+    </footer>
 </body>
 </html>
