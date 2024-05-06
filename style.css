@@ -42,9 +42,15 @@ header{
 
 
 #logo{
+<<<<<<< HEAD
     height: 10vw;
     width: 1vw;
 }
+=======
+    height: 5vw;
+    width: 5vw;
+  }
+>>>>>>> 977ab5a39a60f12b71e0ed9401bacb784e1a8ce4
 nav li{
     display: flex;
     /* margin-top: 70px; */
@@ -69,7 +75,7 @@ nav a{
     position: absolute;
     right: 32vw;
     min-width: 30vw;
-    top: 7vw;
+    top: 5vw;
     transition: all .5s ease-in-out;
     display: grid;
     grid-template-columns: 14vw 14vw;
@@ -222,6 +228,7 @@ video{
     box-shadow: 0 1px 1px rgba(0,0,0,0.08), 0 2px 2px rgba(0,0,0,0.12), 0 4px 4px rgba(0,0,0,0.16), 0 8px 8px rgba(0,0,0,0.20);
 }
 <<<<<<< HEAD
+<<<<<<< HEAD
 /*actualitus*/
 .Actualités{
     height: 100vw;
@@ -282,41 +289,60 @@ video{
   }
   /*end actualitus*/
 =======
+=======
+
+
+
+
+>>>>>>> 977ab5a39a60f12b71e0ed9401bacb784e1a8ce4
 .Actualites{
   height: 60vw;
-  background-color: rgb(224, 64, 64);
+  width: 100%;
+  background-color: rgba(123, 34, 34, 0.31);
   display: flex;
   align-items: center;
- 
+  justify-content: center;
   }
  .allimage{
-  width: 100%;
-    height: 23%;
-    display: inline-flex;
-    gap: 3px;
-    animation-duration: 10s;
-    animation-timing-function: ease;
-    animation-delay: 0s;
-    animation-iteration-count: infinite;
-    animation-direction:alternate;
-    animation-fill-mode: forwards;
-    animation-play-state:running;
-    animation-name: myAnim;
   
-  
+  width: 37%;
+  height: 37%;
+  display: flex;
+  /* position: relative; */
+  /* left: 10%; */
+  /* top: 126px; */
+  will-change: top, left;
+  opacity: 0;
+  animation: fade-in alternate forwards;
+  animation-timeline: view();
  }
- @keyframes myAnim {
+ @keyframes fade-in{
+  0% {
+		
+		transform: rotateY(100deg);
+		transform-origin: left;
+	}
+
 	100% {
-		transform: translateX(100vw);
+		opacity: 1;
+		transform: rotateY(0);
+		transform-origin: left;
 	}
-
-	0% {
-		transform: translateX(-100vw);
-    overflow: hidden;
-	}
-
 }
+<<<<<<< HEAD
 >>>>>>> b4821dda4461e75f1a8e20aea6e2575f5034ed23
+=======
+.titel{
+  position: relative;
+  left: 10px;
+  display: inline-flex;
+  font-family: 'Poppins', sans-serif;
+  color: white;
+  animation: fade-in alternate forwards;
+  animation-timeline: view();
+}
+
+>>>>>>> 977ab5a39a60f12b71e0ed9401bacb784e1a8ce4
 /*order part*/
 .Order {
     max-width: 600px;
