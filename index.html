@@ -7,6 +7,9 @@
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Radio+Canada+Big:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
@@ -20,7 +23,7 @@
             <ul>
                 <li><a href="#accueil">Accueil</a></li>
                 <li><a href="#actualit">Actualités</a></li>
-                <li><a href="Catégories">Catégories⤵</a>
+                <li><a href="Catégories">Catégories</a>
                     <ul class="dropdown-content">
                         <li><a href="">Sauces</a></li>
                         <li><a href="">Bakery</a></li>
@@ -75,69 +78,93 @@
         </div>
     </main>
 
-    <section class="Actualités" id="actualit">  
-        <article class="product">
-          <a href="#"><img src="images/fries.jpg" alt="French fries image"></a>
-          <p><h3>Description :</h3>French fries are served hot, either soft or crispy</p>
-          <p><h3>Price :</h3><span>250DH</span></p>
-        </article>
-        <article class="product">
-          <a href="#"><img src="images/sauce.jpg" alt="Sauce image"></a>
-          <p><h3>Description :</h3>La reine des apéritifs! Une sauce relevée au chili qui accompagnera tellement bien vos samosas</p>
-          <p><h3>Price :</h3><span>90 DH</span></p>
-        </article>
-        <article class="product">
-          <a href="#"><img src="images/papier.jpg" alt="Paper image"></a>
-          <p><h3>Description :</h3>Des emballages alimentaires écologiques rigides et souples pour sandwichs, tacos ou kebabs</p>
-          <p><h3>Price :</h3><span>150 DHDH</span></p>
-        </article>
-        <article class="product">
-          <a href="#"><img src="images/fromage.jpg" alt="Cheese image"></a>
-          <p><h3>Description :</h3>Mozzarella Bloc Mamie Zakia 1kg</p>
-          <p><h3>Price :</h3><span>100DH</span></p>
-        </article>
-    </section>
 
     <section class="Actualites" id="actualit">
-        <div class="allimage">
-            <img src="/mn-premium/images/flatlay.jpg" alt=""> 
+        <div class="text_parent">
+                <div id="text_1">What We Offer </div>
+                <div id="text_2">Learn more about the products we offer</div>
+                <div id="text_3">We're proud to be a MNpremium. From our flexible hours to our attention to
+                    detail, we're here for you.</div>
         </div>
-        <div class="titel">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum ipsum, 
-            quam rerum eum, laborum veniam nihil asperiores quasi unde fugit ipsam </div>
+        <div class="parent">
+            <div class="div1">
+                    <div><img src="/images/sauce.jpg" alt="" srcset=""></div>
+                    <a href="http://"><div id="Categories_select">Sauces  </div></a>
+                    <div id="Categories_text">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                         dignissimos .</div>
+            </div>
+            <div class="div2">
+                <div><img src="/images/dairy.jpg" alt="" srcset=""></div>
+                <a href="http://"><div id="Categories_select">Dairy</div></a>
+                    <div id="Categories_text">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                         dignissimos .</div>
+            </div>
+            <div class="div3">
+                <div><img src="/images/meat.jpg" alt="" srcset=""></div>
+                <a href="http://"><div id="Categories_select">Meat</div></a>
+                <div id="Categories_text">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                     dignissimos .</div>
+            </div>
+            <div class="div4">
+                <div><img src="/images/pakaging.jpg" alt="" srcset=""></div>
+                <a href="http://"><div id="Categories_select">Packagin</div></a>
+                <div id="Categories_text">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                     dignissimos .</div>
+            </div>
+            <div class="div5">
+                <div><img src="/images/seafood.jpg" alt="" srcset=""></div>
+                <a href="http://"><div id="Categories_select">Seafood</div></a>
+                <div id="Categories_text">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                     dignissimos .</div>
+            </div>
+            <div class="div6">
+                <div><img src="/images/flour.jpg" alt="" srcset=""></div>
+                <a href="http://"><div id="Categories_select">Bakery</div></a>
+                <div id="Categories_text">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                     dignissimos .</div>
+            </div>
+            </div>
+        
 
     </section>
-    
-    <section class="Order">
-        <div class="title_order" id="#contact">
-            <h2>contact us and Make Your Order in Our Online Services </h2>
-            <h2>We Are Ready For You </h2>
-        </div>
-        <form action="test.php" method="get" id="order">
-            <div>
-                <input type="text" name="Name" id="Name" placeholder="Your Name" required>
+    <section class="father_container">
+            <div class="container">
+                <div class="contact-form">
+                    <h2>Get in Touch</h2>
+                    <p>Feel free to give us a call or send us an email with your questions or comments.</p>
+                    <form action="#" method="post">
+                        <label for="name">Name *</label>
+                        <input type="text" id="name" name="name" required>
+            
+                        <label for="email">Email address *</label>
+                        <input type="email" id="email" name="email" required>
+            
+                        <label for="phone">Phone number *</label>
+                        <input type="tel" id="phone" name="phone" required>
+            
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message"></textarea>
+            
+                        <div class="checkbox">
+                            <input type="checkbox" id="consent" name="consent" required>
+                            <label for="consent">I allow this website to store my submission so they can respond to my inquiry.</label>
+                        </div>
+            
+                        <button type="submit">Submit</button>
+                    </form>
+                </div>
+                <div class="contact-info">
+                    <h2>Get in touch</h2>
+                    <p><strong>Phone:</strong> +212653029520</p>
+                    <p><strong>Email:</strong> anassreda88@gmail.com</p>
+                    <p><strong>Location:</strong> Fes, 03 MA</p>
+                    <h3>Hours</h3>
+                    <p>Monday - Friday: 9:00am - 10:00pm</p>
+                    <p>Saturday: 9:00am - 6:00pm</p>
+                    <p>Sunday: 9:00am - 12:00pm</p>
+                </div>
             </div>
-            <div>
-                <input type="text" name="Name" id="Name" placeholder="Your Phone number" required>
-            </div>
-            <div>
-                <input type="text" name="Name" id="Name" placeholder="Your local name" required>
-            </div>
-            <div>
-                <input type="email" placeholder="Your Email" required>
-            </div>
-            <div>
-                <input type="checkbox" id="copyCheckbox" >
-                <label for="copyCheckbox">Send A Copy</label>
-            </div>
-            <div>
-                <textarea name="discription" id="disc" cols="30" rows="10" placeholder="Suggest something"></textarea>
-            </div>
-            <div>
-                <input type="submit" value="Give A Shot" id="shot">
-            </div>
-        </div>
-        </form>           
-    </section>
+        </section>
     <footer>
         <div class="footer-container">
           <div class="footer-section">
