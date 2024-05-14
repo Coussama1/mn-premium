@@ -148,6 +148,7 @@ video{
     height: 50%;
    filter: brightness(0.4);
 }
+
 /*articles*/
 .First_title{
     display: flex;
@@ -176,7 +177,7 @@ video{
     height: 50vw;
     align-items: center;
     position: relative;
-    background-color: rgb(246, 246, 246);
+    background-color: #ffffff;
     flex-direction: column;
     gap: 4%;
     
@@ -265,7 +266,7 @@ video{
   position: relative;
   height: 70vw;
   /* width: 100%; */
-  background-color: rgba(214, 212, 212, 0.854);
+  background-color: rgb(226, 223, 223);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -357,6 +358,28 @@ video{
   color: white;
 
 }
+.backroundgena{
+
+  display: inline-flex;
+  position: absolute;
+  height: 100px;
+  width: 98.9vw;
+  top: 228%;
+  z-index: 2;
+  background: rgb(226, 223, 223);
+background: linear-gradient(0deg, rgb(226, 223, 223) 0%,  rgb(255, 255, 255) 100%);
+}
+.backroundgena_down{
+  
+  display: inline-flex;
+  position: absolute;
+  height: 100px;
+  width: 98.9vw;
+  top: 370%;
+  z-index: 2;
+  background: rgb(226, 223, 223);
+background: linear-gradient(180deg, rgb(226, 223, 223) 0%,  rgb(255, 255, 255) 100%);
+}
 /*order part*/
 .father_container{
   position: relative;
@@ -382,8 +405,39 @@ video{
   justify-content: center;
 }
 
-h2 {
-  color: #333;
+#first_touch {
+  text-transform:uppercase;
+  font-family: "Radio Canada Big", sans-serif;
+  font-size: 18px;
+  font-weight: 800;
+  color: #e93f3f;
+  position: relative;
+  top: -94px;
+}
+#first_touch_par{
+  font-family: "Radio Canada Big", sans-serif;
+  position: relative;
+  top: -70px;
+  font-size: 13px;
+  font-weight: 300;
+  color: #5c5c5c;
+}
+.contact-form
+{
+  
+}
+.contact-info{
+  background-color: #d5e1e62d;
+  padding: 17px;
+  width: 15vw;
+  position: relative;
+  left: 27px;
+  top: 27px;
+
+}
+td{
+  font-family: "Radio Canada Big", sans-serif;
+  color: #5c5c5c;
 }
 
 p {
@@ -417,7 +471,7 @@ button {
   background: #b8a05c;
   color: white;
   border: none;
-  padding: 10px 20px;
+  padding: 10px 200px;
   cursor: pointer;
   margin-top: 10px;
 }

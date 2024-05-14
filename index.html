@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MNpremium</title>
     <link rel="stylesheet" href="style.css">
+    
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Radio+Canada+Big:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
@@ -78,7 +79,8 @@
         </div>
     </main>
 
-
+    <span class="backroundgena"></span>
+    <span class="backroundgena_down"></span>
     <section class="Actualites" id="actualit">
         <div class="text_parent">
                 <div id="text_1">What We Offer </div>
@@ -124,44 +126,75 @@
                      dignissimos .</div>
             </div>
             </div>
-        
-
     </section>
     <section class="father_container">
             <div class="container">
                 <div class="contact-form">
-                    <h2>Get in Touch</h2>
-                    <p>Feel free to give us a call or send us an email with your questions or comments.</p>
+                    <h2 id="first_touch">Get in Touch</h2>
+                    <p id="first_touch_par">Feel free to give us a call or send us an email with your questions or comments.</p>
+            
                     <form action="#" method="post">
                         <label for="name">Name *</label>
                         <input type="text" id="name" name="name" required>
             
-                        <label for="email">Email address *</label>
+                        <label for="email">Email *</label>
                         <input type="email" id="email" name="email" required>
             
                         <label for="phone">Phone number *</label>
                         <input type="tel" id="phone" name="phone" required>
-            
+                        
+                        <label for="Address">Address *</label>
+                        <input type=" " id="Address" name="Address" required>
+
                         <label for="message">Message</label>
                         <textarea id="message" name="message"></textarea>
             
                         <div class="checkbox">
                             <input type="checkbox" id="consent" name="consent" required>
-                            <label for="consent">I allow this website to store my submission so they can respond to my inquiry.</label>
+                            <label for="consent" style="display: contents;">I allow this website to store my submission so they can respond to my inquiry.</label>
                         </div>
             
                         <button type="submit">Submit</button>
                     </form>
                 </div>
                 <div class="contact-info">
-                    <h2>Get in touch</h2>
-                    <p><strong>Phone:</strong> +212653029520</p>
-                    <p><strong>Email:</strong> anassreda88@gmail.com</p>
-                    <p><strong>Location:</strong> Fes, 03 MA</p>
+                    <h2 id="second_touch">Get in touch</h2>
+                    <p ><strong>Phone:</strong><a href="tel:+212654213548" style="text-decoration: none ;color: #5c5c5c ;font-family:Radio Canada Big, sans-serif;display: inline;" >(123) 456-7890</a></p>
+                    <p><strong>Email:</strong> <a href="mailto:anassreda88@gmail.com" style="text-decoration: none ;color: #5c5c5c ;font-family:Radio Canada Big, sans-serif;display: inline;">info@mn-premium.com</a></p>
+                    <p><strong>Location:</strong> Zone D'activité Économique D'ait Kamra Al Hoceima</p>
                     <h3>Hours</h3>
-                    <p>Monday - Friday: 9:00am - 10:00pm</p>
-                    <p>Saturday: 9:00am - 6:00pm</p>
-                    <p>Sunday: 9:00am - 12:00pm</p>
+                    <table style="width: 100%;" >
+                        <tbody>
+                        <tr>
+                        <td>Monday</td>
+                        <td>9:00 am - 10:00pm</td>
+                        </tr>
+                        <tr>
+                        <td>Tuesday</td>
+                        <td>9:00 am - 10:00pm</td>
+                        </tr>
+                        <tr>
+                        <td>wednesday </td>
+                        <td>9:00 am - 10:00pm</td>
+                        </tr>
+                        <tr>
+                        <td>Thursday</td>
+                        <td>9:00 am - 10:00pm</td>
+                        </tr>
+                        <tr>
+                        <td>Friday</td>
+                        <td>9:00 am - 10:00pm</td>
+                        </tr>
+                        <tr>
+                        <td>Saturday</td>
+                        <td>9:00 am - 10:00pm</td>
+                        </tr>
+                        <tr>
+                        <td>Sunday</td>
+                        <td>9:00 am - 10:00pm</td>
+                        </tr>
+                        </tbody>
+                        </table>
                 </div>
             </div>
         </section>
