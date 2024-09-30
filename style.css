@@ -41,8 +41,8 @@ header{
 
 
 #logo{
-    height: 6vw;
-    width: 6vw;
+    height: 8vw;
+    width: 8vw;
 }
 
 nav li{
@@ -602,5 +602,6 @@ background: linear-gradient(180deg, rgba(255,255,255,1) 10%, rgba(253,165,92,1) 
   #myBtn:hover {
     background-color: rgba(253, 164, 92, 0.676);
   }
+  
 
 
