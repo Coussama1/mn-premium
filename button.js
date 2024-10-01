@@ -2,7 +2,7 @@
 // don'T touch it
 let mybutton = document.getElementById("myBtn");
 
-
+// Use it
 window.onscroll = function() {scrollFunction()};
 
 function scrollFunction() {
