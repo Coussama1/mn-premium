@@ -1,5 +1,5 @@
 
-// don'T touch it
+//Change
 let mybutton = document.getElementById("myBtn");
 
 // Use it
